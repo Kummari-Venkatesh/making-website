@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ✅ Fixed Navbar */
+.navbar {
+    background-color: #0056b3;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* Navbar Container */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Prevent Content from Hiding Under Navbar */
+.main-content {
+    padding: 100px 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-grow: 1;
+}
+
+/* ✅ Branches Container (Same for Both Engineering & Non-Engineering) */
+.branches-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ✅ Common Branch Styling (For Both Engineering & Non-Engineering) */
+.branch {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 250px; /* Fixed width */
+    height: 120px; /* Same height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    cursor: pointer;
+}
+
+.branch:hover {
+    transform: translateY(-5px);
+    background-color: #e0f7ff;
+}
+
+/* ✅ Non-Engineering Diploma Branches Now Look & Behave the Same */
+.non-engineering .branch {
+    border-left: 5px solid #0073e6; /* Same as Engineering */
+}
+
+/* ✅ Footer Fix */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0056b3;
+    color: #fff;
+    margin-top: auto;
+}

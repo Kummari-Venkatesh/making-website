@@ -1,0 +1,347 @@
+/* Navbar Styles (Restore Original Look) */
+.navbar {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Ensure full width */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Responsive Navbar Fix */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+/* Roadmap Container */
+.roadmap-vertical {
+    display: flex;
+    flex-direction: column; /* Arranges items vertically */
+    gap: 1.5rem;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Each Standard Box (10th, Inter, Diploma, etc.) */
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 80%;  /* Adjust width */
+    max-width: 500px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1e40af;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.roadmap-item:hover {
+    background-color: #f0f7ff;
+    color: #2563eb;
+    transform: scale(1.05);
+}
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles (Ensuring It Stays Intact) */
+.navbar {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 3rem 0;
+    min-height: calc(100vh - 82px);
+}
+
+/* Roadmaps Container */
+.roadmaps-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Main Title */
+.main-title {
+    color: #1e40af;
+    font-size: 2.4rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(to right, #2563eb, #1e40af);
+    border-radius: 4px;
+}
+
+/* Roadmap Flexbox Layout */
+.roadmap-vertical {
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment */
+    gap: 1.5rem; /* Space between items */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Each Standard Box (10th, Inter, Diploma, etc.) */
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;  /* Increased width */
+    max-width: 750px;  /* Limits max width */
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1e40af;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border-top: 5px solid #2563eb;
+}
+
+.roadmap-item:hover {
+    background-color: #f0f7ff;
+    color: #2563eb;
+    transform: scale(1.03);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .roadmap-item {
+        width: 90%; /* Adjusts size for smaller screens */
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+}
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+.main-content {
+    padding: 3rem 0;
+    min-height: calc(100vh - 82px);
+}
+
+/* Roadmaps Container */
+.roadmaps-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Vertical Grid Layout for Roadmap */
+.roadmap-vertical {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between flex items */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Each Roadmap Item (10th, Inter, Diploma, etc.) */
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;  /* Increased width */
+    max-width: 1000px;  /* Larger max width */
+    height:100px;
+}
