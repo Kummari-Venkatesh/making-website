@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.Tech Roadmap</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechCareerGuide - B.Tech Roadmap</title>
+  <link rel="stylesheet" href="btech.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">TechCareerGuide</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Jobs</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <main class="main-content">
-        <div class="roadmaps-container">
-            <h1 class="main-title">B.Tech Roadmap</h1>
-            <p class="subtitle">Explore subjects & job opportunities after B.Tech</p>
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">TechCareerGuide</a>
+    <ul class="nav-links">
+      <li><a href="index.html" id="home-link">Home</a></li>
+      <li><a href="tbranches.html" id="engineering-link">B.Tech Branches</a></li>
+      <li><a href="placement.html" id="placement-link">Placement Preparation</a></li>
+      <li><a href="skill-roadmaps.html" id="skill-roadmaps-link">Skill Based Roadmaps</a></li>
+      <li><a href="resources.html" id="resources-link">Resources</a></li>
+    </ul>
+  </div>
+</nav>
 
-            <div class="roadmap-vertical">
-                <div class="roadmap-card">
-                    <a href="#" class="open-modal" data-title="B.Tech Subjects" data-content="Computer Science, Mechanical, Civil, Electrical, Electronics, IT, Artificial Intelligence.">Subjects</a>
-                </div>
+<main class="main-content">
+  <section class="home-videos" id="home-section">
+    <h1 class="main-title">B.Tech Career Guide</h1>
+    <p class="subtitle">Explore B.Tech branches, career paths, and valuable resources.</p>
 
-                <div class="roadmap-card">
-                    <a href="#" class="open-modal" data-title="Job Opportunities" data-content="Software Engineer, Data Analyst, Civil Engineer, AI Specialist, IT Consultant.">Jobs</a>
-                </div>
-            </div>
-        </div>
-    </main>
+    <div class="video-grid">
+      <iframe class="video" src="https://www.youtube.com/embed/EBQkLNf3tZk9" title="Choosing Your B.Tech Branch" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
 
-    <div class="modal" id="infoModal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-content"></p>
-        </div>
+      <iframe class="video" src="https://www.youtube.com/embed/vR-yPL6eVjY" title="B.Tech Job Opportunities" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section class="career-options" id="career-section">
+    <h2>Career Options & Further Studies</h2>
+    <div class="options-grid">
+      <a href="#" class="option-item" onclick="return false;">
+        <h3>Career Opportunities</h3>
+        <p>Explore diverse job roles after B.Tech.</p>
+      </a>
+      <a href="#" class="option-item" onclick="return false;">
+        <h3>Remote Jobs</h3>
+        <p>Find tech jobs you can do from anywhere.</p>
+      </a>
+      <a href="#" class="option-item" onclick="return false;">
+        <h3>M.Tech Programs</h3>
+        <p>Advance your career with a Master's degree.</p>
+      </a>
+      <a href="#" class="option-item" onclick="return false;">
+        <h3>Internships</h3>
+        <p>Gain practical experience during your studies.</p>
+      </a>
+      <a href="#" class="option-item" onclick="return false;">
+        <h3>Masters Abroad</h3>
+        <p>Study advanced engineering in international universities.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© B.Tech Roadmap. Built for Students, Powered by Passion.</p>
+</footer>
+
+<script src="btech.js"></script>
+
 </body>
 </html>
